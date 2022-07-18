@@ -1,0 +1,87 @@
+import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
+
+class ContactUs extends StatelessWidget {
+  final String _header;
+  final String _description;
+  final String _imgPath;
+  ContactUs( this._header, this._description, this._imgPath);
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        Container(
+          width: 80.w,
+          height: 22.h,
+          decoration: BoxDecoration(
+            color: Colors.grey[300],
+            borderRadius: BorderRadius.circular(25.0),
+            image: DecorationImage(
+              image: AssetImage(_imgPath),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        Container(
+          width: 80.w,
+          height: 22.h,
+          decoration: BoxDecoration(
+            //color: Colors.grey.withOpacity(0.45),
+            color: Color.fromRGBO(88, 123, 122, 0.6),
+            borderRadius: BorderRadius.circular(25.0),
+          ),
+        ),
+        Positioned(
+          top: 0,
+          child: Container(
+            width: 80.w,
+            height: 22.h,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(25.0),
+            ),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 15, bottom: 15),
+                  child: Text(
+                    _header,
+                    textScaleFactor: 1.0,
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      fontFamily: 'Poppins',
+                      color: Colors.white,
+                      letterSpacing: 1.0,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(5),
+                  child: Text(
+                    _description,
+                    textScaleFactor: 1.0,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12.sp,
+                      color: Colors.white,
+                      //fontWeight: FontWeight.w600,
+                      letterSpacing: 0.5,
+                      fontFamily: 'Sans',
+                      shadows: [
+                        Shadow(
+                          blurRadius: 10.0,
+                          //color: Theme.of(context).backgroundColor,
+                          color: Colors.black,
+                          offset: Offset(5.0, 5.0),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}

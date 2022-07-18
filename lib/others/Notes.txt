@@ -1,0 +1,9 @@
+Problems to figure :
+A way to change the color of a certain country in the world map   /////SOLVED///////
+
+Save all the previously selected countries in a db in memory locally
+making collection of images upon country select and maybe store them on a cloud storage
+make a link to the world map so that it can be shareable
+
+
+Adding to the database works problem is to map this data to the actual map

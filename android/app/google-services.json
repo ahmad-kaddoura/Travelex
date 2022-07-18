@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "86139156715",
+    "project_id": "travelex-1",
+    "storage_bucket": "travelex-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86139156715:android:06c827bff72a943a27a6ae",
+        "android_client_info": {
+          "package_name": "ahmadkaddoura.co.travelex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86139156715-np9ee4nmbsv0srs073b44clre3tf6f62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuAJHiiH1d3kmx-2hSBXhzjQbZWMTIlRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86139156715-np9ee4nmbsv0srs073b44clre3tf6f62.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

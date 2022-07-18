@@ -1,0 +1,78 @@
+
+                        Positioned.fill(
+                          top: 20,
+                            child: Align(
+                              alignment: Alignment.topCenter,
+                              child: Text(
+                                _name,
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 22.sp,
+                                  fontFamily: 'Poppins',
+                                  letterSpacing: 1.0,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ),
+                        ),
+                        Positioned.fill(
+                          top: 65,
+                          child: Align(
+                            alignment: Alignment.topCenter,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                for(int i=0 ; i<_rating ; i++)
+                                  Icon(
+                                    Icons.star_rate,
+                                    color: Colors.white,
+                                    size: 15.sp,
+                                  ),
+                              ],
+                            ),
+                          ),
+                        ),
+
+                        Positioned(
+                          bottom: 0,
+                          child: Container(
+                            height: 80.h,
+                            width: 100.w,
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(255, 255, 255, 0.45),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(80),
+                                topRight: Radius.circular(80),
+                              ),
+                            ),
+                            child: Container(
+                              child: Padding(
+                                padding: EdgeInsets.only(top: 32),
+                                child: ListView(
+                                  children: [
+                                    //SizedBox(height: 5.h,),
+                                    Padding(
+                                      padding: const EdgeInsets.all(32),
+                                      child: Text(
+                                        _description,
+                                        style: TextStyle(
+                                          fontSize: 16.sp,
+                                          fontFamily: 'Mukta',
+                                          //fontWeight: FontWeight.w500,
+                                          color: Colors.black,
+                                          /*shadows: [
+                                            Shadow(
+                                              blurRadius: 15.0,
+                                              color: Colors.white,
+                                              offset: Offset(5.0, 5.0),
+                                            ),
+                                          ],*/
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
